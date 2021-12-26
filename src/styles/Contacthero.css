@@ -1,0 +1,114 @@
+.contacthero-section {
+    position: relative;
+    display: flex;
+    margin-bottom: 150px;
+    max-height: 800px;
+}
+.contact-image-container {
+    position: relative;
+    flex: 0 0 57%;
+}
+.contact-image-container img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+}
+.contact-image-container::after {
+    position: absolute;
+    content: "";
+    width: 23%;
+    height: 75%;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+}
+.contact-herosection-heading {
+    position: absolute;
+    bottom: 77%;
+    left: -58%;
+    color: var(--very-light-gray);
+}
+.contact-text { 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 0 0 43%;
+    margin-top: 12%;
+}
+.contacthero-subheading {
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+.contacthero-subheading::after {
+    position: absolute;
+    content: "";
+    top: -30%;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--light-gray);
+}
+
+@media screen and (max-width:850px) {
+    .contacthero-section {
+        margin-bottom: 100px;
+    }
+    .contact-image-container {
+        flex: 0 0 100%;
+    }
+    .contact-image-container::after {
+        width: 85%;
+        height: 60%;
+    }
+    .contact-herosection-heading {
+        left: initial;
+    }
+    .contact-text {
+        position: absolute;
+        height: 60%; 
+        width: 75%;
+        right: 0;
+        bottom: 0;
+    }
+    .contact-herosection-heading {
+        top: -9vw;
+        right: 0;
+        font-size: calc(5.75em + 5vw);
+    }
+    .contacthero-subheading {
+        font-size: calc(.5em + 5vw);
+    }
+    .contacthero-subheading::after {
+        top: -5vh;
+    }
+}
+@media screen and (max-width:540px){ 
+    .contacthero-section {
+        flex-direction: column;
+    }
+    .contact-image-container {
+        width: calc(100% + 16vw);
+        left: -8vw;
+    }
+    
+    .contact-herosection-heading, .contacthero-subheading::after {
+        display: none;
+    }
+    .contact-image-container::after {
+        height: 20%; 
+        width: 90%;
+        left: 0;
+    }
+    .contact-text {
+        position: relative;
+        width: 100%;
+        margin-top: 0;
+    }
+    .contacthero-subheading {
+        margin-bottom: 1rem;
+        font-size: calc(1em + 5vw)
+    }
+    
+}   

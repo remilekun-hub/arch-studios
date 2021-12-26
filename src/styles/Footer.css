@@ -1,0 +1,130 @@
+footer {
+    position: relative;
+    display: flex;
+    width: calc(100% - 100px);
+    height: 125px;
+    align-items: center;
+    background-color: var(--very-light-gray);
+    color: var(--medium-gray);
+    margin-top: 150px;
+}
+.footer-logo-container {
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    height: inherit;
+    width: 125px;
+}
+.footer-logo {
+    width: 70px;
+    margin: auto;
+}
+footer .btn2 {
+    position: absolute;
+    right: -100px;
+}
+footer ul {
+    text-transform: capitalize;
+}
+footer ul li {
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 15px;
+    font-weight: 700;
+}
+footer ul li a {
+    position: relative;
+    transition: color .3s;
+}
+footer ul li a:hover{
+    color: var(--dark-blue); 
+}
+
+footer ul li a::after {
+    position: absolute;
+    content: "";
+    left: 5%;
+    bottom: -3px;
+    width: 90%;
+    height: 1px;
+    background-color: var(--dark-blue);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: .3s ;
+}
+footer ul a:hover::after {
+    transform: scaleX(1);
+}
+
+@media screen and (max-width: 960px) {
+    footer {
+    left: -8vw;
+    width: calc(100% + 8vw); 
+  }
+    footer .btn2 {
+    right: -8vw;
+  }
+  .footer-logo-container {
+    margin-right: 45px;
+  }
+
+}
+@media screen and (max-width:770px) {
+    .footer-link {
+        width: max-content;
+        position: absolute;
+        bottom: 15px; 
+        left: calc(50vw - 110px)        
+    }
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    footer ul li {
+        margin-bottom: 1.2rem;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:540px) {
+    footer {
+        flex-direction: column;
+        width: calc(100% + 16vw);
+        align-items: center;
+        height: max-content;
+        padding: 0 20px 20px;
+        
+    }
+    .footer-logo-container {
+        margin-top: -55px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 120px;
+        width: 120px;
+        align-self: center;
+    }
+    .footer-link {
+        position: relative;
+        align-self: center;
+        bottom: auto; 
+        left: -25px;
+        margin: 35px 0;
+        margin-bottom: 20px;
+    }
+    .footer-link ul li {
+        margin-bottom: 1.4rem;
+    }
+    footer .btn2 {
+        position: relative;
+        justify-content: center;
+        top: auto; 
+        right: auto;
+        min-width: 100%; 
+        height: 60px;
+    }
+    footer ul li a::after {
+        display: none;
+    }
+}

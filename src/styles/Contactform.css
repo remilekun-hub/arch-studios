@@ -1,0 +1,77 @@
+.connect-section {
+    display: flex;
+    justify-content: space-between;
+
+}
+.connect-section h2 {
+    flex: 0 0 25%;
+}
+.connect-section form {
+    position: relative;
+    flex: 0 0 68%;
+}
+.connect-section .form-control {
+    width: 100%;
+    position: relative;
+    margin-bottom: 14px;
+}
+.form-control small {
+    display: none;
+    position: absolute;
+    right: 10px; bottom: 2px;
+    color: var(--error);
+    font-size: .75em;
+}
+.connect-section  .form-control.invalid input, .connect-section  .form-control.invalid textarea {
+    border-bottom: 1px solid var(--error);
+}
+.connect-section  .form-control.invalid small {
+    display: block;
+}
+.connect-section .form-control:nth-child(3) {
+    margin-bottom: 0;
+}
+.connect-section .form-control input, .connect-section .form-control textarea {
+    width: 100%;
+    font-family: inherit;
+    padding: 16px 18px;
+    border: 0;
+    border-bottom: 1px solid var(--medium-gray);
+}
+textarea {
+    display: flex;
+    resize: vertical;
+    min-height: 100px; max-height: 200px;     
+}
+.connect-section .form-control input::placeholder, .connect-section .form-control textarea::placeholder {
+    color: var(--medium-gray);
+}
+.connect-section .form-control input:focus, .connect-section .form-control textarea:focus {
+    border-bottom: 1px solid var(--dark-blue);
+}
+
+button {
+    background-color: var(--dark-blue);
+    border: 0;
+    height: 55px; 
+    width: 55px;
+    cursor: pointer;
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+button img.active {
+    transform: translateX(19px);
+    transition: .75s;  
+}
+@media screen and (max-width: 960px) {
+    .connect-section {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+}
+@media screen and (max-width: 528px) {
+   .connect-section h2 {
+       max-width: 200px;
+   }
+}

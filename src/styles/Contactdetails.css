@@ -1,0 +1,132 @@
+.contact-details-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.imgredirect-link {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    font-size: 12px;
+}
+.imgredirect-link img {
+    transition: .3s;
+}
+
+.imgredirect-link:hover img {
+    transform: translateX(10px);
+}
+.contact-details-text {
+    display: flex;
+}
+.contact-details-text h2 {
+    flex-basis: 35%;
+}
+.contact-address-container {
+    flex-basis: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+
+}
+.imgredirect-link span {
+    margin-right: 25px;
+}
+address {
+    font-style: normal;
+    color: var(--dark-gray);
+    width: 100%;
+}
+address h5 {
+    color: var(--dark-gray);
+}
+address ul {
+    margin-top: 20px;
+}
+address ul li {
+    margin-bottom: 20px;
+    display: flex;
+    font-size: 11px;
+    justify-content: space-between;
+    text-align: right;
+}
+.contact-address-container {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-address-container .main {
+    flex: 0 0 45%;
+}
+.contact-details-map-container {
+    display: flex;
+    margin: 125px 0;
+}
+.contact-details-map-container img {
+    width: 100%;
+    max-width: 100%;
+}
+@media screen and (max-width:845px) {
+    .contact-details-text {
+        flex-direction: column;
+    }
+    .contact-address-container {
+        flex: 0 0 100%;
+        margin: 0;
+        margin-top: 2.5rem;
+    }
+    address ul li {
+        justify-content: start;
+        position: relative;
+    }
+    address ul li span:last-of-type {
+        position: absolute;
+        left: 100px;
+    }
+    
+}
+@media screen and (max-width:700px) {
+    .contact-address-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-address-container .main {
+        display: flex;
+        margin-bottom: 3rem;
+    }
+    address ul li {
+        font-size: 12px;
+    }
+    .contact-address-container .main .imgredirect-link {
+       width: 50%;
+    }
+    address ul li span:last-of-type {
+        left: 120px;
+    }
+}
+@media screen and (max-width:530px) {
+    .contact-details-text h2 {
+        max-width: 200px;
+    }
+    .contact-address-container .main{
+        display: flex;
+        flex-direction: column;
+
+    }
+    address ul li span:last-of-type {
+        left: 100px;
+    }
+    .contact-details-map-container {
+        position: relative;
+        width: calc(100% + 16vw);
+        left: -8vw;
+    }
+    .contact-details-map-container {
+        margin: 100px 0;
+    }
+}
+@media screen and (max-width:334px) {
+    .contact-address-container .main .imgredirect-link {
+        width: 100%;
+    }
+
+}

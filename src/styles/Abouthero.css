@@ -1,0 +1,115 @@
+.about-hero-section {
+    position: relative;
+    display: flex;
+    margin-bottom: 150px;
+    max-height: 800px;
+}
+.about-hero-image-container {
+    position: relative;
+    flex: 0 0 57%;
+}
+.about-hero-image {
+    filter: brightness(.6);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+}
+.about-hero-image-container::after {
+    position: absolute;
+    content: "";
+    width: 22%;
+    height: 70%;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+}
+.about-hero-heading {
+    position: absolute;
+    right: 30%;
+    top: 0;
+    font-weight: 700;
+    color: var(--very-light-gray);
+}
+.about-hero-text-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 0 0 43%;
+    margin-top: 12%;
+}
+.about-hero-subheading {
+    margin-bottom: 3.5rem;
+    position: relative;
+}
+.about-hero-subheading::after {
+    position: absolute;
+    content: "";
+    top: -2rem;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--light-gray);
+}
+@media screen and (max-width:850px) {
+    .about-hero-image-container {
+        flex: 0 0 100%;
+    }
+    .about-hero-image-container::after {
+        width: 85%;
+        height: 60%;
+    }
+    .about-hero-heading {
+        top: -9.5vw;
+        right: 0;
+        font-size: calc(5.75em + 5vw);
+    }
+    .about-hero-text-container {
+        bottom: 0;
+        position: absolute;
+        right: 0;
+        width: 75%;
+        height: 60%;
+        
+    }
+    .about-hero-subheading {
+        font-size: calc(.5em + 5vw)
+    }
+}
+
+@media screen and (max-width:540px) {
+    .about-hero-section {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+    .about-hero-image-container {
+        width: calc(100% + 16vw);
+        left: -8vw;
+        overflow: hidden;
+        
+    }
+    .about-hero-image-container::after {
+        left: 0;
+        width: 90%;
+        height: 20%;
+    }
+    .about-hero-image {
+        filter: initial;
+    }
+    .about-hero-heading {
+        display: none;
+    }
+    .about-hero-text-container {
+        position: relative;
+        width: 100%;
+    }
+    .about-hero-subheading {
+        font-size: calc(1em + 5vw);
+        margin-bottom: 1rem;
+        margin-top: -2rem;
+    }
+    .about-hero-subheading::after {
+        display: none;
+    }
+}

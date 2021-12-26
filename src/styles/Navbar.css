@@ -1,0 +1,112 @@
+header {
+    width: 100%;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    height: 7rem;
+    align-items: center;
+    color: var(--medium-gray);
+    position: relative;
+   
+}
+nav::after {
+    content: '';
+    position: absolute;
+    height: 70%; 
+    width: 1px;
+    background-color: var(--light-gray);
+    top: 0px; bottom: 0; 
+    left: -4.3vw;
+
+}
+
+.logo-wrapper {
+    margin-right: 75px;
+}
+.desktop-link ul {
+    text-transform: capitalize;
+}
+.desktop-link ul li {
+    display: inline-block;
+    margin-right: 50px;
+    
+}
+.desktop-link ul li:nth-child(3) {
+    margin-right: 0;
+}
+.desktop-link ul li a {
+    position: relative;
+    transition: .3s;
+}
+.desktop-link ul li a:hover {
+    color: var(--dark-blue);
+}
+.desktop-link ul li a::after {
+    position: absolute;
+    content: "";
+    left: 5%;
+    bottom: -3px;
+    width: 90%;
+    height: 1px;
+    background-color: var(--dark-blue);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: .3s ;
+}
+.desktop-link ul a:hover::after {
+    transform: scaleX(1);
+}
+@media screen and (max-width:557px) {
+    nav {
+        justify-content: space-between;
+    }
+    .desktop-link {
+        display: none;
+    }
+    .nav-menu {
+        cursor: pointer;
+    }
+    .mobile-nav {
+        background-color: var(--very-light-gray);
+        position: absolute;
+        display: flex;
+        top: -250%;
+        right: -8vw;
+        width: calc(100% + 10vw);
+        padding: 60px 0 60px 40px;
+        transition: .7s ease-in-out;
+        transition-delay: 1ms;
+        z-index: 5; 
+    }
+    .mobile-nav ul li{
+        margin-bottom: 1.2rem;
+        text-transform: capitalize;
+    }
+    .mobile-nav ul li:nth-last-of-type() {
+        margin-bottom: 0;
+    }
+    .mobile-nav ul li a {
+        color: var(--dark-blue);
+    }
+    .show-menu {
+        top: 7rem;
+        transition-delay: 0ms;
+    }
+}
+@media screen and (min-width:557px) {
+    .mobile-nav {
+        display: none;
+    }
+}
+@media screen and (min-width:700px) {
+    .desktop-link ul li {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:540px) {
+    nav::after {
+        display: none;
+    }
+  }
