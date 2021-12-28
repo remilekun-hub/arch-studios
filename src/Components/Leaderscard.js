@@ -7,12 +7,12 @@ function Leaderscard({ avatar, name, title}) {
                 <img src={avatar} className="leader-img" alt="" />
 
                 <div className="socials-overlay">
-                    <a href="#">
+                    <div>
                         <i className="fab fa-linkedin" aria-label="View this leader on LinkedIn" aria-hidden="true" />
-                    </a>
-                    <a href="#">
+                    </div>
+                    <div>
                         <i className="fab fa-twitter" aria-label="View this leader on Twitter" aria-hidden="true" />
-                    </a>
+                    </div>
                 </div>
             </div>
             <div className="card-profile-details">

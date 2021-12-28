@@ -79,7 +79,7 @@
     }
     .socials-overlay{
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
         top: 97%;
         transform: translateY(200%);
         height: min-content;
