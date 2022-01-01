@@ -9,7 +9,7 @@
         "id": 2,
         "picture": "image-hero-seraph.jpg",
         "title": "Seraph Station",
-        "subheading": "The Seraph Station project challenged us to design a unique station that would transport people through time. The result is a fresh and futuristic model inspired by space stations."
+        "subheading": "The Seraph Station project challenged us to design a unique station that would transport people through time."
     },
     {
         "id": 3,
@@ -21,6 +21,6 @@
         "id": 4,
         "picture": "image-hero-trinity.jpg",
         "title": "Trinity Bank Tower",
-        "subheading": "Trinity Bank challenged us to make a concept for a 84 story building located in the middle of a city with a high earthquake frequency. For this project we used curves to blend design and stability to meet our objectives."
+        "subheading": "Trinity Bank challenged us to make a concept for a 84 story building located in the middle of a city with a high earthquake frequency."
     }
 ]
