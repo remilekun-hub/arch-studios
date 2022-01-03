@@ -42,18 +42,18 @@
     color: white;
     display: none;
 }
-.socials-overlay a {
+.socials-overlay div {
     font-size: calc(1em + 2.2vw);
 }
-.socials-overlay a:nth-child(1) {
+.socials-overlay div:nth-child(1) {
     margin-right: 10%;
 }
-.socials-overlay a:nth-child(1):hover {
+.socials-overlay div:nth-child(1):hover {
     color: #0e76a8;
     position: relative;
     z-index: 2;
 }
-.socials-overlay a:nth-child(2):hover {
+.socials-overlay div:nth-child(2):hover {
     color: #00acee;
 }
 
@@ -74,6 +74,9 @@
     .leaders-card-container {
         width: 100%;
     }
+    .leaderscard-avatar-container {
+        margin-bottom: 2rem;
+    }
     .leaderscard-avatar-container:hover img {
         filter: brightness(1);
     }
@@ -83,11 +86,15 @@
         top: 97%;
         transform: translateY(200%);
         height: min-content;
+        margin: 1.3rem 0;
     }
     .leaders-card-container:hover .socials-overlay {
         justify-content: start;
     }
-    .socials-overlay a {
+    .card-profile-details {
+        margin: 1.5rem 0;
+    }
+    .socials-overlay div {
         color: var(--dark-blue);
     }
 
@@ -100,11 +107,12 @@
         object-fit: cover;
         max-height: 300px;
     }
-    .socials-overlay a i {
+    .socials-overlay div i {
         font-size: 30px;
+        color: var(--dark-blue);
     }
-    .socials-overlay a:nth-child(1) {
-        margin-right: 7%;
+    .socials-overlay div:nth-child(1) {
+        margin-right:4%;
     }
     .card-profile-details h5 {
         font-size: 1.1em;
