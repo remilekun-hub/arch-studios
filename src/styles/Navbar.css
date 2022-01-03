@@ -108,7 +108,4 @@ nav::after {
     nav::after {
         display: none;
     }
-    header {
-        overflow: hidden;
-    }
   }
