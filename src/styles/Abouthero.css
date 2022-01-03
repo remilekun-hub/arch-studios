@@ -84,8 +84,8 @@
         margin-bottom: 100px;
     }
     .about-hero-image-container {
-        width: calc(100% + 16vw);
-        left: -8vw;
+        width: calc(100% + 2.4rem);
+        left: -1.2rem;
         overflow: hidden;
         
     }

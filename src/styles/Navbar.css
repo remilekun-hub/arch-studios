@@ -76,8 +76,7 @@ nav::after {
         right: -8vw;
         width: calc(100% + 10vw);
         padding: 60px 0 60px 40px;
-        transition: .7s ease-in-out;
-        transition-delay: 1ms;
+        transition: .4s ease-in-out;
         z-index: 5; 
     }
     .mobile-nav ul li{
