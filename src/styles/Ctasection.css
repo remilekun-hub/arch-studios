@@ -51,8 +51,8 @@
 @media screen and (max-width: 540px) {
     .cta-section {
         margin-bottom: 130px;
-        left: -1.2rem;
-        width: calc(100% + 2.4rem);
+        left: -8vw;
+        width: calc(100% + 16vw);
     }
     .backdrop-content {
         margin: 150px 0;
