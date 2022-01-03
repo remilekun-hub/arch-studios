@@ -138,8 +138,8 @@ p {
 }
 @media screen and (max-width:540px) {
     .hero-section {
-        left: -8vw;
-        width: calc(100% + 16vw);
+        left: -1.2rem;
+        width: calc(100% + 2.4rem);
         margin-bottom: 100px;
         
     }
